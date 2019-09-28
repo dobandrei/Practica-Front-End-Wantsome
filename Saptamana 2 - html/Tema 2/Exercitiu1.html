@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+<title>Formular HTML care sa includa urmatoarele campuri: 
+Nume, Prenume, E-mail - campuri obligatorii 
+Sex, Varsta, Tara, Oras, Adresa, Cod postal, Mesaj, Atasare CV, Buton de trimitere si Buton de resetare. 
+Varsta - trebuie sa fie cuprinsa intre 18 si 85 de ani. 
+Setati o valoare initiala pentru cel putin 3 dintre campuri.</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <form action="/exercitiu1_page.php" name="exercitiu1">
+        <fieldset>
+    <div id="Nume si Prenume"> 
+        <label for="Nume">Nume:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Nume" required value="John"> <br>
+        <label for="Prenume">Prenume:</label>
+            <input type="text" name="Prenume" required value="Doe"> 
+    </div><br>
+    <div id="Sex">    
+            <label for="Masculin">M</label>
+            <input type="radio" name="Sex" id="Masculin" value="M"> 
+        <label for="Feminin">F</label>
+            <input type="radio" name="Sex" id="Feminin" value="F">
+    </div> <br>   
+        <label for="Varsta">Varsta:</label>
+            <input type="number" name="Varsta" min="18" max="85" > <br>
+        <label for="Tara">Tara:</label>
+            <input type="text" name="Tara" value="Romania"> <br>
+        <label for="Oras">Oras:</label>
+            <input type="text" name="Oras"> <br>
+        <label for="Adresa">Adresa:</label> <br>
+            <textarea type="text" name="Adresa" rows="2" cols="60"> </textarea><br>
+        <label for="Cod postal">Cod Postal:</label>
+            <input type="number" name="Cod postal"> <br>
+        <label for="Email">E-mail:</label>
+            <input type="text" name="Email" requeired> <br>
+        <label for="Mesaj">Mesaj:</label><br>
+            <Textarea type="text" name="Mesaj" rows="5" cols="60"> </Textarea><br>
+        <label for="CV">Atasare CV</label>
+            <input type="file" name="CV" > <br>
+        <input type="submit" value="Trimite">    
+        <input type="reset">    
+        </fieldset>
+    </form>
+</body>
+</html>
