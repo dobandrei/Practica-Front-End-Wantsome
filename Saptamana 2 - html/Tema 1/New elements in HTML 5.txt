@@ -2,6 +2,7 @@
 <footer> </footer> - informatii de subsol, despre autor, etc
 <article> </article> - o informatie importanta, de sine statatoare, foarte ligibila 
 <section> </section> - contine sectiuni, capitole cu informatii, face repartizarea de continut
-<header> </header> - informatii de titlu, despre document, poate fi inclus intr-un <article>, <h1-6></h>
+<header> </header> - logo, informatii de titlu, despre document, poate fi inclus intr-un <article>, <h1-6></h>
 <nav> </nav> - de regula folosit in footer pentru a alinia mai multe link-uri de referinta, poate fi folosit si in <body>
+<form> </form> - creaza formular de colectare a datelor.
 

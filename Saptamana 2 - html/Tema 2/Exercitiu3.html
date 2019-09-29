@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search for receipe.</title>
+    <meta charset="utf-8">
+    </head>
+<body >
+<form action="/exercitiu3_page.php" name="exercitiu3">
+<label for="Search">Search for:</label><br>
+    <input type="search" name="Search" placeholder="chocolate cheesecake receipes">
+    <input type="button" name="search" value="Search"><br>
+<div><label for="Match">Match:</label>
+    <input type="radio" name="Match" value="Any word">Any word
+    <input type="radio" name="Match" value="All words" checked>All words 
+    <input type="radio" name="Match" value="Exact phrase">Exact phrase <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" name="Match" value="Sound alike" checked>Sound-alike matching           
+    </div>
+<div><label for="Dated">Dated:</label>
+    <input type="radio" name="Dated" value="Dated">
+    <select name="Dated">
+            <option value="Within the last year">Within the last year</option>
+            <option value="Within this year">Within this year</option>
+            </select><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Dated" value="From">From:
+            <Select type="month" name="Dated">
+                <option value="month" checked>September</option>
+                <option value="month">October</option>
+                <option value="month">November</option>
+                <option value="month">December</option>
+                <option value="month">January</option>
+                <option value="month">February</option>
+                <option value="month">March</option>
+                <option value="month">April</option>
+                <option value="month">Mai</option>
+                <option value="month">June</option>
+                <option value="month">July</option>
+                <option value="month">August</option>
+            </Select>
+            <Select type="number" name="Day">
+                    <option value="day">1</option>
+                    <option value="day">2</option>
+                    <option value="day">3</option>
+                    <option value="day">4</option>
+                    <option value="day">5</option>
+                    <option value="day">6</option>
+                    <option value="day">7</option>
+                    <option value="day" checked>8</option>
+                </Select>,
+            <input type="year" name="year"> <br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To
+            <Select type="month" name="Dated">
+                    <option value="month" checked>September</option>
+                    <option value="month">October</option>
+                    <option value="month">November</option>
+                    <option value="month">December</option>
+                    <option value="month">January</option>
+                    <option value="month">February</option>
+                    <option value="month">March</option>
+                    <option value="month">April</option>
+                    <option value="month">Mai</option>
+                    <option value="month">June</option>
+                    <option value="month">July</option>
+                    <option value="month">August</option>
+                </Select>
+                <Select type="number" name="Day">
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day" checked>8</option>
+                    </Select>,
+                <input type="year" name="year"></div> <br>
+    Within:
+    <select type="text" name="within">
+        <option value="within">Description</option>
+    </select> <br>
+    Show:
+    <select type="number" name="results">
+        <option value="results">10</option>
+        <option value="results">15</option>
+    </select>
+    results
+    <select type="text" name="with/without">
+            <option value="with/without">with</option>
+            <option value="with/without">without</option>
+        </select> 
+    summaries <br>
+    Sort by:
+    <select type="text" name="sortby">
+        <option value="sortby">relevance</option>
+        <option value="sortby">date</option>
+    </select> 
+</form>
+</body>
+</html>
