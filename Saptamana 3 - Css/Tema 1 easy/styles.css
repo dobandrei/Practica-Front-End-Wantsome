@@ -1,0 +1,13 @@
+.colorred li a{color:red;
+            }
+div a:first-child{color:green;
+                    border:1px solid black;
+                    }
+#diffcolor a{color: #C55;
+            }
+h1,h2 {font-family:'Turret Road', cursive;
+                }  
+div p {font-family:'Shadows Into Light', cursive;
+        }  
+img {width:150px; height: 150px;
+        }     
