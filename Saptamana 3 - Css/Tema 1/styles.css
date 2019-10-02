@@ -1,0 +1,33 @@
+body :nth-child(even) {color:green;
+    }
+ul :nth-child(3) { background-color:lightblue;
+                }
+ul :first-child:not(a) {border-top:1px solid green;
+                        }
+ul :last-child:not(a) {border-bottom:5px dotted blue;
+                        }
+ul :nth-child(5) a {color:red;
+                    }
+ul :nth-child(3) a {color:red;
+                    }
+ul :nth-child(5) a:hover {color:grey;
+                            }
+body :nth-child(2) {list-style-type: none;
+                    } 
+body :nth-child(5) {list-style-type: none;
+                    } 
+input[type=text]:focus {background-color:grey;
+                    }
+form :first-child input {color:green;
+                    }
+form :nth-child(2) input{color:blue;
+                    }
+form :nth-child(3) input {color:transparent;
+                    }
+form :nth-child(3)[placeholder] {color:grey;
+                                }
+form :nth-child(4) input:focus {background-color:yellow;
+                                color:pink;
+                                }
+form :last-child :hover {color:red;
+                        }
