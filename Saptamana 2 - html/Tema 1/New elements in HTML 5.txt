@@ -5,4 +5,5 @@
 <header> </header> - logo, informatii de titlu, despre document, poate fi inclus intr-un <article>, <h1-6></h>
 <nav> </nav> - de regula folosit in footer pentru a alinia mai multe link-uri de referinta, poate fi folosit si in <body>
 <form> </form> - creaza formular de colectare a datelor.
+<aside> </aside> - o explicatie care tine de acelasi continut, gen explici o locatie , se pune dupa o <section> dar trebuie sa aiba legatura cu acel <section>
 
