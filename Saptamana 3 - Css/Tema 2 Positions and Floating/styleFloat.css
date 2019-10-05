@@ -1,0 +1,40 @@
+.container {
+    width:95%;
+    margin:auto;
+    overflow:hidden;
+    border:1px solid lightseagreen;
+}
+body {
+    font-family:verdana;
+}
+nav {
+    float:left;
+    width:15%;
+    color:purple;
+    padding-right:10%;
+    border:1px solid purple;
+    box-sizing: border-box;
+}
+section {
+    float:right;
+    width:85%;
+    border:1px solid yellow;
+    box-sizing: border-box;
+}
+footer{
+    border:1px solid green;
+    text-align: center;
+}
+@media(max-width:300px;){
+    nav {
+        width: 100%;
+        float:none;
+    }
+    section {
+        width: 100%;
+        float:none;
+    }
+}
+/* Nu stiu cum sa fac sa nu se intersecteze <nav> cu <section> cand micsorez browserul 
+Am vazut intr-un tutorial cu comanda @media, dar nu functioneaza la mine*/
+

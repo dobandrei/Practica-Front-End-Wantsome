@@ -1,0 +1,31 @@
+.container {
+    width:95%;
+    margin:auto;
+    overflow:hidden;
+    border:1px solid lightseagreen;
+    box-sizing: border-box;
+}
+body {
+    position:relative;
+    font-family:arial;
+    min-width:15%;
+}
+nav {
+    position:absolute;
+    color:purple;
+    padding-right:4%;
+    border:1px solid purple;
+}
+section{
+    padding:0;
+    margin-left:15%;
+    overflow:hidden;
+    border:1px solid yellow; 
+}
+footer{
+    position:relative;  
+    border:1px solid green;
+    text-align: center;
+}
+/* Nu stiu cum sa fac sa nu se intersecteze <nav> cu <section> cand micsorez browserul */
+

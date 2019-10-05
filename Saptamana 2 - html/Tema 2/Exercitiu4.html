@@ -2,22 +2,28 @@
 <html>
     <head>
         <title>Search for receipe.</title>
-    <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesex4.css">
+        <meta charset="utf-8">
     </head>
 <body >
 <form action="/exercitiu4_page.php" name="exercitiu4">
-    <header><h1>My feedback form</h1></header>
-<ul>
-    <li>Name:<input type="text" name="name"></li>
-    <li>Email:<input type="email" name="email"></li>
-    <li>Password:<input type="password" name="password"></li><br>
-    <li>Please check all the emotions that apply to you:
+    <header id="main_header">
+        <div><h1>My feedback form</h1>
+        </div>
+    </header>
+<div class="container">
+    <ul>
+        <li>Name:<input type="text" name="name"></li>
+        <li>Email:<input type="email" name="email"></li>
+        <li>Password:<input type="password" name="password"></li><br>
+        <li>Please check all the emotions that apply to you:
     <ul>
         <li type="disc">Angry<input type="checkbox" name="Emotion"></li>
         <li type="disc">Sad<input type="checkbox" name="Emotion"></li>
         <li type="disc">Happy<input type="checkbox" name="Emotion"></li>
         <li type="disc">Ambivalent<input type="checkbox" name="Emotion"></li></li></ul>
-    <li>How satisfied were you with our service?
+    <br>
+        <li>How satisfied were you with our service?
     <ul>
             <li type="disc">Very satisfied<input type="radio" name="Satisfaction"></li>
             <li type="disc">Satisfied<input type="radio" name="Satisfaction"></li>
@@ -31,8 +37,9 @@
     <li>Location visited:<select type="location" name="location">
                             <option value="text">Select location</option> 
                         </select > </li>
-    <li><input type="submit" value="submit"></li> 
+    <li><input type="submit" value="SUBMIT"></li> 
 </ul>
+</div>
 </form>
 </body>
 </html>
