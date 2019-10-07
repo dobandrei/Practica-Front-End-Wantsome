@@ -3,7 +3,45 @@
     color:white;
     padding:1% 5%;
     font-family:Verdana;
+    text-align:center;
 }
 .container {
+    width:90%;
     font-family:Tahoma;
+    border: 2px dotted grey; 
+    margin:auto;
+}
+.container  input[type="text"],
+            input[type="email"]{
+    width:50%;
+    height:20px;
+    border:1px solid grey;           
+}
+.container  input[type="radio"], 
+            input[type="checkbox"]{
+    float:left;
+    margin-right:15px;
+    margin-left:0;
+}
+.container ul{
+    list-style:none;
+    padding-left:20px; 
+}
+.container ul li{
+    list-style:none;
+}
+.container label{
+    display:block;
+}
+.container textarea{
+    margin:auto;
+    width:90%;
+}
+#submit {
+    background-color: black;
+    color:white;
+    padding:10px 15px;
+    width:100%;
+    border:none;
+    margin-left:0; 
 }
