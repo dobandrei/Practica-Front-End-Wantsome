@@ -6,34 +6,36 @@
     </head>
     <body >
 <form action="/exercitiu2_page.php" name="exercitiu2">
-<fieldset>
-    <header><h1>Travel reservation form</h1></header>
-    <strong>* denotes mandatory</strong> <br>  
-    <label for="Name">Full name*:</label><br>
-        <input type="text" name="Name" placeholder="FirstName LastName" required><br>
-    <label for="Email">Email Address*:</label><br>
-        <input type="email" name="Email" placeholder="EMAIL_ADDRESS" required><br>
-    <label for="TourPackage">Select Tour Package*:</label><br>
-        <select name="TourPackage" required>
-            <option value="Goa">Goa</option>
-            <option value="Gob">Gob</option>
-            <option value="Goc">Goc</option>
-            <option value="God">God</option></select><br>
-    <label for="Arrival">Arrival date*:</label><br>
-        <input type="date" name="Arrival"  placeholder="m/d/y" required><br>
-    <label for="Number of persons">Number of persons*:</label><br>
-        <input type="text" name="Number of persons" placeholder="UNKNOWN_TYPE" required><br>        
-    <label for="Avail">What would you want to avail?*</label><br>
-    Boarding<input type="checkbox" name="Avail" ><br>
-    Fooding<input type="checkbox" name="Avail" ><br>
-    Sight seeing<input type="checkbox" name="Avail"><br>      
-    <label for="Coupon">Discount Coupon code:</label><br>
-        <input type="text" name="Coupon" placeholder="UNKNOWN_TYPE"><br>
-    <label for="Terms">Terms and conditions*</label><br>
-        <input type="radio" name="Terms" value="I agree" checked>I agree
-        <input type="radio" name="Terms" value="I disagree">I disagree <br> 
-    <input type="submit" value="Complete reservation">      
-</fieldset>
+    <fieldset>
+        <header>
+            <h1>Travel reservation form</h1>
+        </header>
+        <strong>* denotes mandatory</strong> <br>  
+            <label for="Name">Full name*:</label><br>
+                <input type="text" name="Name" placeholder="FirstName LastName" required><br>
+            <label for="Email">Email Address*:</label><br>
+                <input type="email" name="Email" placeholder="EMAIL_ADDRESS" required><br>
+            <label for="TourPackage">Select Tour Package*:</label><br>
+                <select name="TourPackage" required>
+                    <option value="Goa">Goa</option>
+                    <option value="Gob">Gob</option>
+                    <option value="Goc">Goc</option>
+                    <option value="God">God</option></select><br>
+            <label for="Arrival">Arrival date*:</label><br>
+                <input type="date" name="Arrival"  placeholder="m/d/y" required><br>
+            <label for="Number of persons">Number of persons*:</label><br>
+                <input type="text" name="Number of persons" placeholder="UNKNOWN_TYPE" required><br>        
+            <label for="Avail">What would you want to avail?*</label><br>
+                Boarding<input type="checkbox" name="Avail" ><br>
+                Fooding<input type="checkbox" name="Avail" ><br>
+                Sight seeing<input type="checkbox" name="Avail"><br>      
+            <label for="Coupon">Discount Coupon code:</label><br>
+                <input type="text" name="Coupon" placeholder="UNKNOWN_TYPE"><br>
+            <label for="Terms">Terms and conditions*</label><br>
+                <input type="radio" name="Terms" value="I agree" checked>I agree
+                <input type="radio" name="Terms" value="I disagree">I disagree <br> 
+        <input type="submit" value="Complete reservation">      
+    </fieldset>
 </form>
 </body>
 </html>

@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 body {
-    position:relative;
     font-family:arial;
     min-width:15%;
 }

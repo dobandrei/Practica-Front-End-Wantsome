@@ -1,0 +1,19 @@
+$backgroundColor1:black;
+$borderColor:#3399ff;
+$backgroundColor2:fuchsia;
+$divWidth:300px;
+$divHeight:300px;
+
+div {
+    width:$divWidth;
+    height:$divWidth;
+    background-color: $backgroundColor1;
+    border-color:$borderColor;
+}
+div:nth-of-type(2){
+    width:$divWidth;
+    height:$divHeight;
+    background-color:$backgroundColor2;
+    border:1px solid $backgroundColor2;
+}
+@import 'responsive';
