@@ -90,7 +90,6 @@ console.log(stringObj(Obj2keys));*/
   surname: "Applegate",
   }
   
-  
   //Adaugati o metoda care sa sorteze cele 2 valori ale numelui.
   
   
