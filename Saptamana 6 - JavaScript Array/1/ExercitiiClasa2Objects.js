@@ -48,17 +48,40 @@ user.fullName ();*/
 // "Copiati" obiectul printr-o metoda specifica obiectelor(vedeti pe google) si stocatil intr-o alta variabila
 // Pe obiectul nou adaugam 2 noi proprietati
 // Avem obiectul de mai jos, folosind o metoda pe obiecte faceti "merge" intre cele 2 obiecte si salvati-l sub un nume nou.
-myHouse = { 
+/*myHouse = { 
     rooms: 3,
     zone: "Bucium",
     animals: 1
   }
-  
+var myCar = {
+    wheels: 4,
+    color: "blue",
+    hp: 140,
+  }
+function copyObj(object){
+      return Object.assign({},object);
+  }
+var newCar = copyObj(myCar);
+  newCar.filter = "no";
+  newCar.steeringwheel = "on the left";
+var merged = Object.assign(newCar,myHouse);
+// merged si newCar au acelasi valori, newCar si-a modificat valorile */
+
   // Ex5 
   // Creati un obiect care sa contina un alt obiect in interorul lui cu 2 proprietati
   // Accesati proprietatile acelui obiect si stocati key-le intr-o variabila separata.
   // transformati arrayul intr-un singur string care sa rezulte "proprietatea1 si proprietatea2 apartin obiectului x"
-  
+ /* var myObj1 = {
+    color: myObj2 = {
+      colorPrime: "red",
+      colorShine: "no",
+    }
+  }
+  var Obj2keys = Object.keys(myObj2);
+  function stringObj(object) {
+    return object.shift()+ " si " + object.shift() + " apartin obiectului x";
+  }
+console.log(stringObj(Obj2keys));*/
   
   //Ex6
   // Avem obiectul : 
@@ -66,6 +89,8 @@ myHouse = {
   name: "John",
   surname: "Applegate",
   }
+  
+  
   //Adaugati o metoda care sa sorteze cele 2 valori ale numelui.
   
   
