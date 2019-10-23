@@ -34,7 +34,14 @@ console.log(MegaString);*/
 //Ex3
 // Creati un obiect  cu 3 proprietati si una dintre ele sa reprezinte o  metoda
 // Metoda din obiect vreau sa returneze sau sa printeze (console.log()) prima valoare impreuna cu a doua valoare.
-
+/*var user = {
+  name : "Ion",
+  surname : "Popescu",
+  fullName : function() {
+              return console.log(this.name + " " + this.surname);
+            },
+};
+user.fullName ();*/
 
 //Ex4 
 // Creati un obiect cu cateva proprietati
