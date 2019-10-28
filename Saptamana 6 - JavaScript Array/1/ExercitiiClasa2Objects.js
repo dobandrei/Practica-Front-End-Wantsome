@@ -9,7 +9,7 @@
   wheels : 4,
 };
 car.name = "Mercedes";
-console.log(car.name);*/
+console.log(car.name);
 
 //Ex2
 // Creati un obiect cu 4 proprietati
@@ -29,7 +29,7 @@ var StringKeys = keys.join().toUpperCase();
 var valors = Object.values(car);
 var StringValors = valors.join().toLowerCase();
 var MegaString = StringKeys.concat(" reprezinta ceva super.")
-console.log(MegaString);*/
+console.log(MegaString);
 
 //Ex3
 // Creati un obiect  cu 3 proprietati si una dintre ele sa reprezinte o  metoda

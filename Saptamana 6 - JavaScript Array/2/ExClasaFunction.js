@@ -96,3 +96,9 @@ function greatestNrBetween (no1,no2){
       return " Valoare nu este acceptata !";
     }
   }
+  function is_weekend(stringDate){
+    var weekend = new Date(stringDate);
+    if (weekend.getDay() === 6 || weekend.getDay() === 0){
+      return "Is weekend";
+    }
+  }
