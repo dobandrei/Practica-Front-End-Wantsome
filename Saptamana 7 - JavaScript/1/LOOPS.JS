@@ -95,3 +95,30 @@ function threeTimes(numberMax) {
     console.log(i + " " + i + " " + i);
   }
 }
+function zeroToN(number) {
+  var f = 0;
+  while (f <= number) { }
+  for (var i = 0; i <= number; i++) {
+    console.log(i);
+  }
+  f++;
+}
+}
+
+function computeSumOfArrayElements(myArray) {
+  if (!Array.isArray(myArray)) {
+    return "Va rugam reintroduceti un Array compus din numere !";
+  }
+  for (var i = 0; i < myArray.length - 1; i++) {
+    if (typeof (myArray[i]) !== "number") {
+      return "Nu toate elementele din Array sunt de tip numeric !";
+    }
+  }
+  var w = myArray.length;
+  var sum = 0
+  while (w < 0 ) {
+    sum += myArray.pop();
+    w--;
+  }
+  return console.log(sum);
+}
