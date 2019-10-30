@@ -23,7 +23,7 @@ function sexById (numberId){ // Am denumit functia si parametrul, astfel incat s
       case punctaj >= 3 && punctaj <= 6:
         return "Calificatul corespunzator punctajului " + punctaj + " este D";
       break;
-      case punctaj == 7 || punctaj === 8:
+      case punctaj == 7 || punctaj == 8:
         return "Calificatul corespunzator punctajului " + punctaj + " este B";
       break;
       case punctaj == 9:
@@ -105,5 +105,5 @@ function sexById (numberId){ // Am denumit functia si parametrul, astfel incat s
    } else {
      return options['default']; // daca parametrul va fi dat gresit ne va da default
    }
-  } // din cauza ca avem 2 optiune, cu 2 texte diferite folosim is in If clause
+  } // din cauza ca avem 2 optiuni, cu 2 texte diferite folosim si If clause
   
