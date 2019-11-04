@@ -46,6 +46,15 @@ function oriTreiFor(number) { // declar functia de tip named function cu numele 
     }
 }
 
+function multiplyMyNumber(number){ // solutie data de Ovidiu
+    for (var i= 0; i <= number; i++){
+       for (var j = 0; j <= 10; j++){
+            var res = i * j;
+            console.log(i + "*" + j + "=" + res);
+       }
+    }
+}
+
 function tablaInmultirii(number) { // declar functia de tip named function cu numele 'tablaInmultirii' cu 1 parametru, ca numar maxim de iteratii
     if (typeof (number) !== "number") { // verific daca parametrul este diferit de tipul de data numeric
         return console.log("Dati o valoare corecta ca numar !"); // daca este diferit, rog utilizatorul sa introduca un parametru corect

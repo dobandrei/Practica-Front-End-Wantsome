@@ -1,0 +1,7 @@
+garbage collection - eficienta folosirii CONST sau LET in locul la VAR (memoria e mai libera)
+scope pollution - cand sunt exagerat de multe variabile in memorie, facut cu VAR
+block scoped - este LET si CONST
+function scoped - este VAR
+transpiler - program care modifica JS6 in JS5 pentru browserele care nu au inca implementat
+hoisting - intuitia programului js care declara automat variabilele, cu undifined, daca este apelata inainte de a fi declarata efectiv si atribuita valoarea
+
