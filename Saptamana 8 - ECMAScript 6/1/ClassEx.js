@@ -158,24 +158,56 @@ function whatIsToday() {
     return "Azi este : " + day[o.getDay()] + "\n" + "Ora este : " + o.getHours() + " : " + o.getMinutes() + " : " + o.getSeconds();
 }
 
+const whatIsToday = () => {
+    let day = ["Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata", "Duminica"];
+    let o = new Date();
+    return `Azi este : ${day[o.getDay()]} 
+Ora este : ${o.getHours()} : ${o.getMinutes()} : ${o.getSeconds()}`;
+}
+
 //ex10
-// ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true daca pin-ul e corect si false daca e gresit
+// ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true daca pin-ul e 
+// corect si false daca e gresit
 // validPin("1234") => true
 // validPin("12345") => false
 // validPin("z23f") => false
+function corectPin(stringNumber) {
+    console.log(stringNumber.length);
+    if (typeof stringNumber !== "string" || stringNumber.length !== 6 && stringNumber.length !== 4) {
+        return false;
+    } else {
+        for (let i = 0; i < stringNumber.length; i++) {
+            if (stringNumber.charCodeAt(i) < 48 || stringNumber.charCodeAt(i) > 57) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
 
 //ex11 
 //Folosind regex vreau sa scot toate vocalele dintr-un string
 // removeVowels("Hey I am developer") => "Hy m dvlpr"
+const vowelsInString = string => {
+    let temporaryString = "";
+    for (let i = 0; i < string.length; i++) {
+        if (['a', 'e', 'i', 'o', 'u'].indexOf(string.charAt(i).toLowerCase()) === -1) {
+            temporaryString += string.charAt(i);
+        }
+    }
+    return temporaryString;
+}
 
 //ex12
 //Vreau sa am o functie care sa verifice daca un numar este patrat
 // isSquareNumber(-1) => false
 // isSquareNumber(25) => true
 // isSquareNumber(3) => false
-
+const squareNumber = number => (Number.isInteger(Math.sqrt(number))) ? true : false;
 
 //ex13
-// Vreau sa am o functie care sa verifice daca un cuvant este o anagrama- daca toate literele din primul string se regasesc in al doilea
+// Vreau sa am o functie care sa verifice daca un cuvant este o anagrama- daca toate literele din primul string 
+// se regasesc in al doilea
 // isAnagram("School master", "The class room") => true
 // isAnagram("silent", "listen") => true
+const isAnagram = (myString1,myString2) => (myString1.toLowerCase().split("").sort().join("").trim() === myString2.toLowerCase().split("").sort().join("").trim()) ? true : false;

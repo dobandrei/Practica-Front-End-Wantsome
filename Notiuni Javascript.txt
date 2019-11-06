@@ -1,7 +1,17 @@
 garbage collection - eficienta folosirii CONST sau LET in locul la VAR (memoria e mai libera)
 scope pollution - cand sunt exagerat de multe variabile in memorie, facut cu VAR
-block scoped - este LET si CONST
+block scoped - este LET si CONST, isi pastreaza valoarea doar in If/Else/Switch
 function scoped - este VAR
+sugar sintax - apelarea unei expresii din js6, mai putine linii de cod, aceeasi functionalitate ca in js5. Transcrierea pentru browsere o face transpiler-ul
 transpiler - program care modifica JS6 in JS5 pentru browserele care nu au inca implementat
 hoisting - intuitia programului js care declara automat variabilele, cu undifined, daca este apelata inainte de a fi declarata efectiv si atribuita valoarea
+'use strict' - notifica cazurile de hoistings si da eroarea ca variabila/functia nu a fost declarata
+closure - javascript pastreaza functionalitatea functiilor cu toate variabilele din ele si pot fi folosite ulterior,la o functie care are return o alta functie, iar la fiecare apelare a functiei se schimba variabila locala
+ternary operator -  IF si ELSE scris cu ? si :
+Arrow function => inlocuieste return intr-o functie, A NU SE FOLOSI IN INTERIORUL OBIECTELOR, deoarece .this nu mai merge, nu mai poti ajunge la keys
+Object.freeze({}) - creeaza un obiect care nu poate fi schimbat, obiectul creat cu const poate fi schimbat
+String Literals (din ES6) - concatenarea stringurilor cu $ (exemplu return `${name} stringNOU ${surname}`)
+...spread - se foloseste cand apelezi o functie sau in interiorul array-urilor sau a obiectelor
+...rest - se foloseste ca perimetru in functie.
+
 
