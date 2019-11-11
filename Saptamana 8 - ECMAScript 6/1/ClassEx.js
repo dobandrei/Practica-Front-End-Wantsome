@@ -172,7 +172,6 @@ Ora este : ${o.getHours()} : ${o.getMinutes()} : ${o.getSeconds()}`;
 // validPin("12345") => false
 // validPin("z23f") => false
 function corectPin(stringNumber) {
-    console.log(stringNumber.length);
     if (typeof stringNumber !== "string" || stringNumber.length !== 6 && stringNumber.length !== 4) {
         return false;
     } else {

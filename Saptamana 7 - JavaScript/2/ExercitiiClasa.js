@@ -3,19 +3,23 @@ function protectEmail(email) {
     return console.log(email.slice(0, 3) + "..." + email.slice(position));
 }
 
+
+String.prototype.EveryFirstLetterCap = function () {
+    let myArray = this.valueOf().split(" ");
+    //
+}
 function EveryFirstLetterCap(myString) {
     var myArray = myString.split(" ");
     var result = myArray.shift();
     var firstLetter = result.charAt(0).toUpperCase();
     result = result.replace(result.charAt(0), firstLetter);
-
     for (var i = 0; i = myArray.length;) {
         var nextString = myArray.shift();
         firstLetter = nextString.charAt(0).toUpperCase();
         nextString = nextString.replace(nextString.charAt(0), firstLetter);
         result += " " + nextString;
     }
-    console.log(result);
+    return result;
 }
 
 function invertUpperToLower(myString) {
