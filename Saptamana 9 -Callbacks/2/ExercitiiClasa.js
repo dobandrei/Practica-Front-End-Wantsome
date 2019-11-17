@@ -19,3 +19,17 @@ const lii = ul.children;
 lii[1].style.backgroundColor = "yellow";
 lii[1].nextElementSibling.style.backgroundColor = "blue";
 lii[1].previousElementSibling.style.backgroundColor = "red";
+
+
+
+const list = document.querySelector('ul');
+const newItem = document.createElement('li');
+newItem.textContent = 'Python';
+list.appendChild(newItem);
+const anotherNewItem = document.createElement('li');
+anotherNewItem.textContent = '.Net'
+list.insertBefore(anotherNewItem, list.firstElementChild)
+const modifiedItem = document.createElement('li');
+modifiedItem.textContent = 'More Javascript!';
+list.replaceChild(modifiedItem, list.children[0]);
+list.removeChild(list.lastElementChild);

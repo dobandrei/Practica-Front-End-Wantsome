@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Book List
+    </title>
+  </head>
+  <body>
+    <h1> Book List </h1>
+  </body>
+  <script>
+    let books = [
+  {title: 'The Power of Habit',
+   author: 'Charles Duhigg',
+   read: true,
+  },
+  {title: 'Mindset: The New Psychology of Success',
+  author: 'Carol S. Dweck',
+  read: false
+  }];
+    books[0].url = "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X";
+    books[0].imgsrc = "https://images-na.ssl-images-amazon.com/images/I/819ZixpQzUL.jpg";
+    books[1].url = "https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322";
+    books[1].imgsrc = "https://images-na.ssl-images-amazon.com/images/I/81o--FP-hPL.jpg";
+    const body = document.querySelector('body');
+    for (let i=0;i<books.length;i++){
+    const p = document.createElement('p');
+      body.appendChild(p);
+      p.textContent = `"${books[i].title}" by ${books[i].author}`;
+    }
+    const ul = document.createElement('ul');
+    body.appendChild(ul);
+for (let i=0;i<books.length;i++){
+      const li = document.createElement('li');
+      ul.appendChild(li);
+      const a = document.createElement('a');
+      li.appendChild(a);
+      a.textContent = `"${books[i].title}" by ${books[i].author}`;
+      a.setAttribute('href',books[i].url);
+      a.setAttribute('target','_blank');
+      a.style.textDecoration ='none';
+      const br = document.createElement('br');
+      li.appendChild(br);
+      const img = document.createElement('img');
+      li.appendChild(img);
+      img.setAttribute('src',books[i].imgsrc);    
+      img.setAttribute('width', "50px");
+      if (books[i].read) {
+        a.style.color = "green";
+      } else {
+        a.style.color = "red";
+      }
+}
+  </script>
+</html>
