@@ -1,0 +1,56 @@
+const start = room => `I am cleaning the ${room}.`;
+const finish = () => `Yey, now I can drink and play games.`;
+const doing = (myArray,fn1,fn2) => {
+for (let i=0; i<myArray.length;i++){
+  console.log(fn1(myArray[i]));
+  }
+console.log(fn2());
+}
+doing(['bedroom','bathroom','lounge'],start,finish);
+
+
+
+
+
+
+const customMap = (array, callback) => {
+	let arr = [];
+	for(let index in array){
+		arr.push(callback(array[index]));
+	}
+	return arr;
+}
+var randomArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const increment = a => ++a;
+const double = a => a*2;
+const square = a => Math.pow(a,2);
+console.log(customMap(randomArray, square));
+
+
+
+
+
+
+const filter = (myArray, fnTrue) => {
+  let filteredArray = [];
+  for (let i = 0; i < myArray.length; i++) {
+    let element = myArray[i];
+    if (fnTrue(element)) {
+      filteredArray.push(element);
+    }
+  }
+  return filteredArray;
+};
+
+const div3 = number => Number.isInteger(number/3) ? true : false;
+const div2 = number => Number.isInteger(number/2) ? true : false;
+const prime = number => {
+  for (let i=2; i<number;i++) {
+    if (number%i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(filter([1,2,3,4,5,6],div3));

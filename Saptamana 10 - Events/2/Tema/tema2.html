@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Color and their codes</title>
+</head>
+
+<body>
+    <ul>
+    </ul>
+</body>
+
+<script>
+    let requestURL = "https://github.com/bahamas10/css-color-names/blob/master/css-color-names.json";
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function () {
+        let colors = request.response; 
+         
+    }
+</script>
+
+</html>
