@@ -34,3 +34,12 @@ newReleases.filter(obj => obj.rating === 5).map(obj => obj.id);
 
 movieLists.map(obj => obj.videos.map(obj => obj.id));
 
+
+const moveLetters = function(string){
+    let stringArray = string.split("");
+    return stringArray.map((str,index) => String.fromCharCode(str.charCodeAt(stringArray[index])+1));
+    };
+
+
+
+

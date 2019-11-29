@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Get Persons Dom Elements
+    </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const persons = [
+        {
+            name: "Angelina",
+            surname: "Jolie",
+            age: 80
+        },
+        {
+            name: "Eric",
+            surname: "Jones",
+            age: 27
+        }];
+    const body = document.querySelector("body");
+    const getPersonsFullName = persons.map(key => "<h1>" + key.name + " " + key.surname + "</h1>" + "<h2>" + key.age + "</h2> ");
+    body.innerHTML = getPersonsFullName;
+</script>
+</html>
