@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Puppies</title>
+    <style>
+        img {
+            margin: 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn">Click me!</button>
+    <div class="text">Replace me!!</div>
+</body>
+<script>
+    const puppies = 'https://www.reddit.com/r/aww/search.json?q=puppy&restrict_sr=true'
+
+    let request = new XMLHttpRequest();
+    request.open('GET', puppies);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function () {
+        let pupps = request.response;
+        const div = document.querySelector("div");
+        
+        
+        const button = document.querySelector("button");
+        button.addEventListener("click", load());
+        function load() {
+            div.textContent = "";
+            for (let i = 0; i < pupps.data.children.length; i++) {
+                const img = document.createElement("img");
+                div.appendChild(img);
+                img.src = pupps.data.children[i].data.thumbnail;
+            }
+        }
+    }
+</script>
+</html>
