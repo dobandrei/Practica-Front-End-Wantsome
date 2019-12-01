@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button" onclick="buttonEventHandler()">Post it</button>
+    <h2>Nume: <input type="text" id="input" /></h2>
+    <p>"Sunt un cameleon."</p>
+</body>
+<script>
+    function buttonEventHandler() {
+        return alert("Ai apasat pe buton.");
+    }
+
+    function textInputEventHandler() {
+        return alert("Textul din input a fost schimbat!");
+    }
+    const input = document.getElementById("input");
+    input.addEventListener("change", textInputEventHandler)
+
+
+    function cameleonEventHandler() {
+        const p = document.querySelector("p");
+        return p.style.color = '#' + Math.random().toString(16).substr(-6);
+    }
+    const body = document.querySelector("body");
+    body.addEventListener("keydown", cameleonEventHandler);
+
+</script>
+
+</html>

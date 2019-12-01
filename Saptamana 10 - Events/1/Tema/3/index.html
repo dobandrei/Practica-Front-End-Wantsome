@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calc</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Patratul numarului:
+        <input type="number" id="square" size="2" />
+    </label>
+    <button id="sqr-btn">Calculate</button>
+    <br /><br />
+
+    <label>Jumatatea numarului:
+        <input type="number" id="half" size="2" />
+    </label>
+    <button id="half-btn">Calculate</button>
+    <br /><br />
+
+    <label>
+        Primul numar este procent:
+        <input type="number" id="percent1" size="2" />
+    </label>
+    <label>
+        din al doilea numar:
+        <input type="number" id="percent2" size="2" />
+    </label>
+    <button id="prc-btn">Calculate</button>
+    <br /><br />
+
+    <label>Calculati aria cercului:
+        <input type="number" id="area" size="2" />
+    </label>
+    <button id="area-btn">Calculate</button>
+    <br /><br />
+    <div id="sol"></div>
+</body>
+
+<script>
+    const sqrNum = () => {
+        const inputSqr = document.getElementById("square").value;
+        alert(Math.sqrt(inputSqr));
+    }
+    const buttonSqr = document.getElementById("sqr-btn");
+    buttonSqr.addEventListener("click", sqrNum);
+
+    const halfNum = () => {
+        const inputHalfNum = document.getElementById("half").value;
+        alert(inputHalfNum / 2);
+    }
+    const buttonHalfNum = document.getElementById("half-btn");
+    buttonHalfNum.addEventListener("click", halfNum);
+
+    const percentNum = () => {
+        const inputPercentNum1 = document.getElementById("percent1").value;
+        const inputPercentNum2 = document.getElementById("percent2").value;
+        alert((inputPercentNum1 / 100) * inputPercentNum2);
+    }
+    const buttonPercentNum = document.getElementById("prc-btn");
+    buttonPercentNum.addEventListener("click", percentNum);
+
+    const areaCircle = () => {
+        const inputAreaCircle = document.getElementById("area").value;
+        alert(Math.PI * Math.pow(inputAreaCircle, 2));
+    }
+    const buttonAreaCircle = document.getElementById("area-btn");
+    buttonAreaCircle.addEventListener("click", areaCircle);
+
+</script>
+
+</html>

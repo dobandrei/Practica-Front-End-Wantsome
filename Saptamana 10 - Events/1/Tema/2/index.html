@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calc</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise</h1>
+
+    <ul>
+        <li>Nume: <input type="text" id="name" /></li>
+        <li>Adjectiv: <input type="text" id="adjective" /></li>
+        <li>Cuvant random: <input type="text" id="random-word" /></li>
+    </ul>
+
+    <button id="exButton">Post it</button>
+
+    <div id="story"></div>
+</body>
+
+<script>
+    const postTheGossip = () => {
+        const inputName = document.getElementById("name").value;
+        const inputAdjective = document.getElementById("adjective").value;
+        const inputRandom = document.getElementById("random-word").value;
+        const div = document.getElementById("story");
+        div.textContent = `${inputName} este ${inputAdjective} ${inputRandom}`;
+    }
+
+    const button = document.getElementById("exButton");
+    button.addEventListener("click", postTheGossip);
+
+</script>
+
+</html>
