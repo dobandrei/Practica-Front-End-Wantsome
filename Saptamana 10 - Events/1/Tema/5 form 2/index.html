@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Form 1</title>
+    <title>Form 2</title>
     <style>
         body {
             margin-left: 15px;
@@ -23,6 +23,15 @@
             background-color: rgb(12, 12, 12);
             color: white;
         }
+
+        .pleaseCorrect {
+            background-color: pink;
+            padding: 10px 15px;
+            width: 40%;
+            border: 1px solid red;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
@@ -30,18 +39,30 @@
     <h1>Get your own Site 42 Sites account in seconds</h1>
     <form>
         <div> USERNAME: <br>
+            <div class="pleaseCorrect" id="userNamePlease">
+                Please enter a username.
+            </div>
             <input type="text" id="userName" class="input" pattern="[A-Za-z0-9].{3,}"> <br>
             <p>(Must be at least 4 characters, letters and numbers only.)</p>
         </div>
         <div> EMAIL ADDRESS: <br>
+            <div class="pleaseCorrect" id="emailPlease">
+                Please enter a valid email address.
+            </div>
             <input type="text" id="email" class="input"><br>
             <p>We send your registration email to this address. (Double-check your email address before continuing.)</p>
         </div>
         <div> FIRST NAME: <br>
+            <div class="pleaseCorrect" id="firstNamePlease">
+                Please enter a First Name.
+            </div>
             <input type="text" id="firstName" class="input" required><br>
             <p>(Must be input.)</p>
         </div>
         <div> LAST NAME: <br>
+            <div class="pleaseCorrect" id="lastNamelPlease">
+                Please enter a Last Name.
+            </div>
             <input type="text" id="lastName" class="input" required><br>
             <p>(Must be input.)</p>
         </div>
@@ -49,6 +70,9 @@
             <input type="text" id="nickName" class="input"><br>
         </div>
         <div> PHONE: <br>
+            <div class="pleaseCorrect" id="phonePlease">
+                Please enter a Phone.
+            </div>
             <input type="text" id="phone" class="input" pattern="[0-9].{9,}"><br>
             <p>(Must be at least 10 characters, numbers only.)</p>
         </div>
@@ -60,13 +84,30 @@
     </form>
 </body>
 <script>
-    function sendToServer (){
-        const inputUserName = document.getElementById("userName").value;
-        const inputEmail = document.getElementById("email").value;
-        const inputFirstName = document.getElementById("firstName").value;
-        const inputLastName = document.getElementById("lastName").value;
-        const inputNickName = document.getElementById("nickName").value;
-        const inputPhone = document.getElementById("phone").value;
+    let inputUserName = document.getElementById("userName");
+    let inputEmail = document.getElementById("email");
+    let inputFirstName = document.getElementById("firstName");
+    let inputLastName = document.getElementById("lastName");
+    let inputNickName = document.getElementById("nickName");
+    let inputPhone = document.getElementById("phone");
+
+    const divUserNamePlease = document.getElementById("userNamePlease");
+    function deleteUserNamePlease (){
+        divUserNamePlease.style.display = "none";
+    }
+    inputUserName.addEventListener ("input", deleteUserNamePlease );
+    inputUserName.addEventListener ("delete", displayUserNamePlease => divUserNamePlease.style.display = "block" );
+    
+
+
+
+    function sendToServer() {
+        let inputUserName = document.getElementById("userName").value;
+        let inputEmail = document.getElementById("email").value;
+        let inputFirstName = document.getElementById("firstName").value;
+        let inputLastName = document.getElementById("lastName").value;
+        let inputNickName = document.getElementById("nickName").value;
+        let inputPhone = document.getElementById("phone").value;
         return alert(
             `
              ${inputUserName}
@@ -77,7 +118,8 @@
              ${inputPhone}`);
     }
     const submit = document.getElementById("submit");
-    submit.addEventListener("click",sendToServer);
+    submit.addEventListener("click", sendToServer);
+
 </script>
 
 </html>
