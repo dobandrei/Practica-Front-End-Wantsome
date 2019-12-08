@@ -1,4 +1,5 @@
 #header {
+  margin: 0;
   padding: 1px;
   background-color: grey;
   position: -webkit-sticky;
@@ -30,7 +31,6 @@
 }
 
 #logo {
-  border: 1px solid black;
   background-color: white;
   text-align: center;
   width: 100%;
