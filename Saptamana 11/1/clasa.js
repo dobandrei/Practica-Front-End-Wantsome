@@ -59,7 +59,7 @@ const double = value => value * 2;
 const composedValue = (f1,f2,value) => f1(f2(value));
 
 
-const myFunction = value => compose(square,double,value);
+const myFunction = value => compose(square(double(value)));
 
 
 const find = (array,f) => array.filter(n => f(n)).map(n=>n);
