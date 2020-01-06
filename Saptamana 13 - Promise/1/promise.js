@@ -69,8 +69,4 @@ capitalizeWords(["ala",1,"portocala","in","copac"])
 .then(result => sortWords(result))
 .then(result => console.log(result))
 .catch (error => console.log(error));
-
-
-
-
 .then(result => console.log(JSON.parse(result)))
