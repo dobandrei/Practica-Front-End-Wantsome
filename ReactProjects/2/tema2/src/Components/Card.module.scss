@@ -1,0 +1,12 @@
+.Container {
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border : 1px solid red;
+}
+
+
+.blackPhoto {
+    background-color: black;
+    display: 50%;
+}

@@ -1,0 +1,16 @@
+.HeaderHome {
+  background-color: #73aff5;
+  height: 40px;
+  padding: 1px;
+}
+
+.HeaderHome h6 {
+  color: white;
+  margin-left: 200px;
+}
+
+.HeaderBanner {
+  background-color: #086280;
+  height: 200px;
+}
+/*# sourceMappingURL=Header.module.css.map */

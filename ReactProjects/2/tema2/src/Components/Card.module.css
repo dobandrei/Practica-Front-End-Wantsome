@@ -1,0 +1,16 @@
+.Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.blackPhoto {
+  background-color: black;
+  display: 50%;
+}
+/*# sourceMappingURL=Card.module.css.map */
