@@ -72,12 +72,14 @@ let request = new XMLHttpRequest();
   request.responseType = 'json';
   request.send();
   request.onload = function () {
-let saying = request.response;
+const saying = () => request.response;
+
 const button = document.getElementById("xhr");
 let p = document.getElementById("quote");
-const createQ = () => p.textContent = saying;
-button.addEventListener("click",createQ()); // TypeError: Property 'handleEvent' is not callable. Imi apare daca apas iar pe button. Cum fac sa fie callable ?
-  }
+
+const createQ = () => p.textContent = saying();
+button.addEventListener("click",createQ); // TypeError: Property 'handleEvent' is not callable. Imi apare daca apas iar pe button. Cum fac sa fie callable ?
+}
 </script>
 
 </html>
