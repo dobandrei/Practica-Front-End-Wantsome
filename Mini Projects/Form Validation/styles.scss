@@ -1,0 +1,51 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+background-color: rgb(228, 227, 227);
+min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 2%;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+#form {
+    color: rgb(180, 179, 179);
+    text-transform: capitalize;
+    font-size: larger;
+    h2 {
+        color: black;
+    }
+    p {
+        margin-bottom: 0;
+        color: rgb(100, 98, 98);
+    }
+    input {
+        width: 97%;
+        height: 30px;
+        border-radius: 5%;
+        
+    }
+    ::placeholder {
+        color: grey;
+        opacity: 0.7; 
+      }
+}
+
+#button {
+    background-color: rgb(14, 143, 194);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+ 
