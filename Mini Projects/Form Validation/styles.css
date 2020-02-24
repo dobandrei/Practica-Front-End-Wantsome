@@ -107,11 +107,11 @@ body {
   border-color: var(--succes-color);
 }
 
-.formInput.eror input {
+.formInput.error input {
   border-color: var(--error-color);
 }
 
-.formInput.eror small {
+.formInput.error small {
   visibility: visible;
 }
 
