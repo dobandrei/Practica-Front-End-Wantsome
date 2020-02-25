@@ -1,0 +1,38 @@
+.mainBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pictureBox {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pictureBox img {
+  height: 200px;
+}
+
+.pictureBox p {
+  margin: 0px;
+}
+
+.pictureBox :nth-child(3) {
+  font-weight: bold;
+}
+
+.pictureBox span {
+  font-size: small;
+  font-style: italic;
+}
+/*# sourceMappingURL=Main.module.css.map */

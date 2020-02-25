@@ -1,0 +1,45 @@
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.headerBox {
+  padding: 5px;
+  border-bottom: 1px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerBoxLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerBoxLeft input {
+  margin-top: 12px;
+  margin-left: 5px;
+  height: 20px;
+  width: 300px;
+}
+
+.headerBoxRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerBoxRight p {
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.headerBoxRight p a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=Header.module.css.map */

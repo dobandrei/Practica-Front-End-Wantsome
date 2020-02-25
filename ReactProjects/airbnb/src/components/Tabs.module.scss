@@ -1,0 +1,19 @@
+.box {
+    display:flex;
+    justify-content: flex-start;
+    padding-bottom : 10px;
+    border-bottom : 1px solid lightgrey;
+}
+
+.divBox {
+    border: solid 1px grey;
+    margin-left :60px;
+    margin-top : 10px;
+    padding-left : 10px;
+    padding-right : 10px;
+    border-radius: 5px;
+    a {
+        text-decoration : none;
+        color:black;
+    }
+}

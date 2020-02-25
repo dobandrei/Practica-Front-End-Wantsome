@@ -1,0 +1,26 @@
+.mainBox {
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pictureBox {
+    margin : 50px;
+    display : flex; 
+    flex-direction: column;
+    img {
+        height :200px;
+    }
+    p {
+    
+        margin : 0px;
+    }
+    :nth-child(3){
+        font-weight: bold;
+    }
+    span {
+        font-size: small;
+        font-style: italic;
+    }
+    
+}
