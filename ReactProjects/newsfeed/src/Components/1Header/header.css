@@ -1,0 +1,12 @@
+.header {
+    border: 10px solid red;
+    margin: 20px;
+}
+
+.logo {
+    border: 5px solid blue;
+}
+
+.tabs {
+    border: 5px solid green;
+}
