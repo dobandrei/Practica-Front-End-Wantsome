@@ -4,7 +4,8 @@ import '../header.css';
 function logo() {
   return (
     <div className="logo">
-        <logo>DOB News</logo>
+        <logo className="logoDOB">DOB</logo>
+        <logo className="logoNews">News</logo>
     </div>
   );
 }

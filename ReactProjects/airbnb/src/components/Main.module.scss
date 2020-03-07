@@ -1,13 +1,16 @@
+
 .mainBox {
     display : flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 0 50px;
 }
 
 .pictureBox {
     margin : 50px;
     display : flex; 
     flex-direction: column;
+    
     img {
         height :200px;
     }

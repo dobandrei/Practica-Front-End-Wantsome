@@ -4,7 +4,12 @@ import '../header.css';
 function tabs() {
   return (
     <div className="tabs">
-        <p>Tabs</p>
+        <ul>
+          <li>Home</li>
+          <li>Local</li>
+          <li>International</li>
+          <li>Search</li>
+        </ul>
     </div>
   );
 }

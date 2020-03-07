@@ -6,9 +6,11 @@ import Tabs from "./components/Tabs";
 
 import MainBody from "./components/MainBody";
 
+import './App.css';
+
 function App() {
   return (
-    <div>
+    <div className="App">
     <Header />
     <Tabs />
     <MainBody />

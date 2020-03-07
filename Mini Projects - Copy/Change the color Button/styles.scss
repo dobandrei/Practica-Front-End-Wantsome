@@ -1,0 +1,34 @@
+div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: green($color: #000000);
+}
+
+.colorBtn {
+padding: 15px;
+background-color: rgba(0,0,0,0.5);
+color: white;
+border-radius: 8px;
+text-decoration: none;
+font-size: 30px;
+text-transform : capitalize;
+cursor: pointer;
+}
+
+.colorBtn:hover {
+    background-color: black;
+        }
+
+h2 {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    text-transform : capitalize;
+}
+
+

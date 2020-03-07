@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+:root {
+  --succes-color:#2ecc71;
+  --error-color:#e74c3c;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans",sans-serif;
+  background-color: #ebd7d7;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2%;
+  padding: 30px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 10px grey;
+          box-shadow: 0 2px 10px grey;
+  width: 400px;
+}
+
+#form {
+  color: #b4b3b3;
+  text-transform: capitalize;
+  font-size: 25px;
+  padding: 10px 30px;
+}
+
+#form h2 {
+  color: black;
+  text-align: center;
+  margin-top: 0;
+}
+
+.formInput {
+  margin-bottom: 10px;
+}
+
+.formInput label {
+  margin-bottom: 0;
+  color: black;
+  display: block;
+}
+
+.formInput input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #f0f0f0;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.formInput input::-webkit-input-placeholder {
+  color: grey;
+  opacity: 0.7;
+}
+
+.formInput input:-ms-input-placeholder {
+  color: grey;
+  opacity: 0.7;
+}
+
+.formInput input::-ms-input-placeholder {
+  color: grey;
+  opacity: 0.7;
+}
+
+.formInput input::placeholder {
+  color: grey;
+  opacity: 0.7;
+}
+
+.formInput input:focus {
+  border-color: #777;
+}
+
+.formInput small {
+  font-size: 15px;
+  visibility: hidden;
+  color: var(--error-color);
+}
+
+.formInput.succes input {
+  border-color: var(--succes-color);
+}
+
+.formInput.error input {
+  border-color: var(--error-color);
+}
+
+.formInput.error small {
+  visibility: visible;
+}
+
+#button {
+  background-color: #0e8fc2;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

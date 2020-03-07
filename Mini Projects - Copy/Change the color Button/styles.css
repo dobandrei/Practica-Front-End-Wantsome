@@ -1,0 +1,42 @@
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: 0;
+}
+
+.colorBtn {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.colorBtn:hover {
+  background-color: black;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=styles.css.map */
